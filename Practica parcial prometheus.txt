@@ -1,0 +1,19 @@
+INSTALACION PROMETEHUS
+
+1. sudo apt update 
+2. sudo apt install prometheus 
+3. prometheus --version
+4. sudo systemctl status prometheus
+5. sudo ufw allow 9090/tcp
+6. sudo apt install prometheus-node-exporter
+7. sudo nano /etc/prometheus/prometheus.yml
+	Se configura de 15segundos y se cambia a 5s 
+
+8. sudo systemctl restart prometheus
+
+PARA LAS METRICAS
+
+node_memory_MemAvailable_bytes
+node_cpu_seconds_total
+node_disk_read_bytes_total / node_disk_written_bytes_total
+node_disk_discards_completed_total
